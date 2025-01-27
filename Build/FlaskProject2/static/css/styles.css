@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container, .form-container, .result-container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover, .form-container:hover, .result-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.buttons, form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 30px;
+    color: white;
+    min-width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
+
+.primary { background-color: #6A0DAD; }
+.primary:hover { background-color: #5b0c9e; }
+
+.secondary { background-color: #008000; }
+.secondary:hover { background-color: #006700; }
+
+.calculate, .login {
+    background-color: #007bff;
+}
+.calculate:hover, .login:hover {
+    background-color: #0056b3;
+}
+
+label, p {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+

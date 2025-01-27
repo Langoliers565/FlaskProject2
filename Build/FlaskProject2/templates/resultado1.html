@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado del Cálculo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Resultado</h1>
+        <p>Nombre del cliente: {{ nombre }}</p>
+        <p>Total sin descuento: ${{ total_sin_descuento }}</p>
+        <p>El descuento es: ${{ total_sin_descuento - total_con_descuento }}</p>
+        <p>El total a pagar es de: ${{ total_con_descuento }}</p>
+        <a href="/" class="button">Volver</a>
+    </div>
+</body>
+</html>
+
+
